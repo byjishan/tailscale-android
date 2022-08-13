@@ -152,7 +152,7 @@ func newBackend(dataDir string, jvm *jni.JVM, appCtx jni.Object, store *stateSto
 func (b *backend) Start(notify func(n ipn.Notify)) error {
     b.backend.SetNotifyCallback(notify)
     prefs := ipn.NewPrefs()
-    prefs.ControlURL = "http://<server_Address>:8080"
+    prefs.ControlURL = "http://18.141.142.71:8080"
     opts := ipn.Options{
     StateKey: "ipn-android",
         UpdatePrefs: prefs,
